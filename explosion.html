@@ -184,7 +184,7 @@ function getRandomInteger(min, max) {
 // This function creates a new explosion at the specified screen co-ordinates
 function explode(x, y, speed = 300) {
   // these are new particles, so set their age to zero
-  let age = 0;
+  const age = 0;
 
   // generate 100 particles per explosion
   for (let i = 0; i < 100; i++) {
@@ -204,12 +204,12 @@ function explode(x, y, speed = 300) {
 // This function redraws the screen by plotting each particle in the array
 function draw() {
   // clear the screen
-  screen.clear()
+  screen.clear();
 
   // loop through all the particles in the array
   for (let [x, y, vx, vy, age] of particles) {
     // for each particle in the array, plot its position on the screen
-    screen.draw.filled_rect(new Rect(x, y, 1, 1), PARTICLE_COLOR);
+    screen.draw.filled_rect(new Rect(Math.trunc(x), Math.trunc(y), 1, 1), PARTICLE_COLOR);
   }
 }
 

@@ -5,3 +5,5 @@ This code example is taken from Wireframe #1 Source Code: The genius behind Defe
 The code example was created by Daniel Pope, and the comments were created by Simon Long.
 
 The code example is licenced under Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported.
+
+[Run the JavaScript port of Source Code in your browser.](https://thisarray.github.io/Wireframe-1/explosion.html)
